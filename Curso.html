@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Ganhe Dinheiro Online</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f0f0f0, #888888, #333333);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        header {
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #000000;
+            margin: 0 auto;
+            image-rendering: auto;
+        }
+
+        .contact-info {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            text-align: right;
+            color: #000000;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+            color: #222222;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .option {
+            background: #444444;
+            color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .option h2 {
+            font-size: 1.2rem;
+        }
+
+        .option p {
+            font-size: 0.9rem;
+        }
+
+        .form-section {
+            margin-top: 40px;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        input {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background: #555555;
+            color: #f0f0f0;
+        }
+
+        input::placeholder {
+            color: #aaaaaa;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #888888;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #aaaaaa;
+        }
+
+        .curve-line {
+            width: 100%;
+            height: 10px;
+            background: #222222;
+            border-radius: 50%;
+            margin: 40px 0;
+            position: relative;
+            animation: moveLine 3s infinite;
+        }
+
+        @keyframes moveLine {
+            0% {
+                transform: translateX(-10px);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(-10px);
+            }
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+
+        a {
+            color: #bbbbbb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .floating-circles {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .circle {
+            position: absolute;
+            background: radial-gradient(circle, #000000, transparent);
+            border-radius: 50%;
+            animation: float 8s infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) scale(0.3);
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-10vh) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        .circle:nth-child(1) {
+            width: 50px;
+            height: 50px;
+            left: 15%;
+            animation-delay: 0s;
+        }
+
+        .circle:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            left: 35%;
+            animation-delay: 2s;
+        }
+
+        .circle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            left: 55%;
+            animation-delay: 4s;
+        }
+
+        .circle:nth-child(4) {
+            width: 30px;
+            height: 30px;
+            left: 75%;
+            animation-delay: 1s;
+        }
+
+        .circle:nth-child(5) {
+            width: 45px;
+            height: 45px;
+            left: 85%;
+            animation-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/HTML/450070b1-713a-411b-b7ae-1d42974b5fe7.webp" alt="">
+        </div>
+
+
+        <h1>Bem-vindo! Iremos ensinar você a se tornar um Raul de verdade!</h1>
+        <div class="contact-info">
+            <p>Contato: contato@nossosite.com</p>
+            <p><a href="#">Entre nos nossos grupos aqui</a></p>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="options">
+            <div class="option">
+                <h2>Programação</h2>
+                <p>Aprenda as bases da programação e crie ferramentas que gerem renda online de forma escalável.</p>
+            </div>
+            <div class="option">
+                <h2>Push de Dados</h2>
+                <p>Entenda como capturar e utilizar dados para impulsionar seu negócio digital.</p>
+            </div>
+            <div class="option">
+                <h2>Avanço Tecnológico</h2>
+                <p>Domine estratégias modernas de marketing digital para alcançar públicos específicos.</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-group">
+                <input type="text" placeholder="Nome completo" required>
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Idade" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Telefone ou Email" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </div>
+
+        <div class="curve-line"></div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <div class="floating-circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
+
